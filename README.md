@@ -24,6 +24,10 @@ Node Development 환경 시작 - dev api
 yarn dev
 ```
 
+## 배포주소
+
+> **Vercel** : [https://roka-music.vercel.app/](https://roka-music.vercel.app/)
+
 ## 군가 출처
 
 - 모든 군가의 출처는 유튜브입니다.
