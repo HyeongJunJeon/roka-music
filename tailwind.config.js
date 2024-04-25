@@ -11,10 +11,8 @@ module.exports = {
   ],
   theme: {
     screens: {
-      // sm: "480px",
-      // md: "768px",
-      // lg: "976px",
-      // xl: "1478px",
+      mobile: { min: "0px", max: "1023px" },
+      desktop: { min: "1024px" },
     },
     colors: {
       primary: "#030303",

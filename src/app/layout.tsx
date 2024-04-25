@@ -19,12 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-primary">
         <SWRProvider>
-          <div className="w-full h-screen flex bg-primary">
+          <div className="w-full h-screen flex">
             <SideNavBar />
 
-            <article className="flex-1 max-w-[1478px] mx-auto pl-12 pr-20  overflow-auto">
+            <article className="flex-1 max-w-[1478px] mx-auto pl-12 pr-20 mobile:px-4 overflow-auto">
               <Header />
               <nav className="flex gap-3 my-14">
                 {CATEGORYS.map((category) => (
