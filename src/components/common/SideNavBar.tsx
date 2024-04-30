@@ -14,10 +14,14 @@ export default function SideNavBar() {
 
   //styles
   const asideOpenedStyles =
-    "w-full max-w-[240px] border-r border-r-[#292929] px-2";
+    "w-full max-w-[240px] h-screen border-r border-r-[#292929] px-2 relative mobile:block mobile:fixed moblie:top-0 moblie:left-0 mobile:bg-primary mobile:animate-fade-right";
 
   return (
-    <aside className={`py-3 pl-2 ${isOpen && asideOpenedStyles} mobile:hidden`}>
+    <aside
+      className={`py-3 pl-2 z-10 ${
+        isOpen ? asideOpenedStyles : "mobile:hidden"
+      }`}
+    >
       <article className={`flex flex-col gap-4`}>
         <Logo />
         <section className="w-full flex flex-col">

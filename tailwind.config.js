@@ -20,6 +20,15 @@ module.exports = {
       white: "#FFFFFF",
       gray: "#FFFFFFB3",
     },
+    keyframes: {
+      fadeRight: {
+        "0%": { transform: "translate(-100px)" },
+        "100%": { transform: "translate(0px)" },
+      },
+    },
+    animation: {
+      "fade-right": "fadeRight 0.3s linear ",
+    },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities, theme }) {

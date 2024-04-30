@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 
 import { SWRProvider } from "@/libs";
-import { CategoryTab, Header, SideNavBar } from "@/components";
+import { CategoryTab, Header, ContentsLayout, SideNavBar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,8 +23,7 @@ export default function RootLayout({
         <SWRProvider>
           <div className="w-full h-screen flex">
             <SideNavBar />
-
-            <article className="flex-1 max-w-[1478px] mx-auto pl-12 pr-20 mobile:px-4 overflow-auto">
+            <ContentsLayout>
               <Header />
               <nav className="flex gap-3 my-14">
                 {CATEGORYS.map((category) => (
@@ -32,7 +31,7 @@ export default function RootLayout({
                 ))}
               </nav>
               {children}
-            </article>
+            </ContentsLayout>
           </div>
         </SWRProvider>
       </body>

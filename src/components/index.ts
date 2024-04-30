@@ -1,5 +1,6 @@
 export { default as Header } from "./common/Header";
 export { default as SideNavBar } from "./common/SideNavBar";
+export { default as ContentsLayout } from "./common/ContentsLayout";
 export { default as CategoryTab } from "./common/CategoryTab";
 export { default as MultiCarousel } from "./common/MultiCarousel";
 export { default as CarouselPosts } from "./CarouselPosts";
