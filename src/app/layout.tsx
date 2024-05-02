@@ -3,7 +3,13 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 
 import { SWRProvider } from "@/libs";
-import { CategoryTab, Header, ContentsLayout, SideNavBar } from "@/components";
+import {
+  CategoryTab,
+  Header,
+  ContentsLayout,
+  SideNavBar,
+  PlayerBar,
+} from "@/components";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,6 +37,7 @@ export default function RootLayout({
                 ))}
               </nav>
               {children}
+              <PlayerBar />
             </ContentsLayout>
           </div>
         </SWRProvider>

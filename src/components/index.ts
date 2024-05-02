@@ -7,3 +7,4 @@ export { default as CarouselPosts } from "./CarouselPosts";
 export { default as PostCard } from "./PostCard";
 export { default as IconMenu } from "./common/IconMenu";
 export { default as Logo } from "./common/Logo";
+export { default as PlayerBar } from "./common/PlayerBar";
